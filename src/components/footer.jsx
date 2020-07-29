@@ -11,13 +11,14 @@ const EnlaceHome = styled(Link)`
   text-decoration: none;
 
 `
-const Header = () => {
+const Footer = ({title}) => {
+  const year = new Date().getFullYear();
   return ( 
-    <header     // esta forma de insertar css es como un props dentro de la etiqueta
+    <footer     // esta forma de insertar css es como un props dentro de la etiqueta
       css={css`  
       background-color:rgba(44,62,80);
       padding: 1rem;
-
+      margin-top: 4rem;
        
 
       `
@@ -37,16 +38,28 @@ const Header = () => {
         }
           `}
         >
+            <Navegacion/>
           <EnlaceHome
           
           to= "/">
             <h1>Hotel Gatsby</h1>
           </EnlaceHome>
          
-         <Navegacion/>
+       
         </div>
-    </header>
+
+        <p css= {css`
+     text-align: center;
+     color: #fff;
+     background-color: rgb(33,44,55);
+     margin:0;
+     padding: 1rem;
+     
+     `}>{title} Todos los derechos reservados {year} &copy;</p>
+    </footer>
+
+
     );
 }
  
-export default Header;
+export default Footer;

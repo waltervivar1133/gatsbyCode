@@ -1,12 +1,15 @@
 import React from "react";
 import Layout from '../components/layout.jsx';
+import ContenidoNosotros from '../components/nosotros';
 
 
 
 const IndexPage = () => (
   <Layout>
-  <h1>Desde Nostros </h1>
+
+    <ContenidoNosotros/>
+ 
   </Layout>
 )
 
-export default IndexPage
+export default IndexPage;
