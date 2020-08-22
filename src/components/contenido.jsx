@@ -60,9 +60,7 @@ const ContenidoInicio = () => {
           
           > {titulo}</h2>
           <TextoInicio>
-            <p>
-              {contenido}
-            </p>
+            <p>{contenido}</p>
             <Image fluid={imagen.fluid} alt="pantalla principal"/>  
             {/* las imagenes siempre van sin comillas */}
           </TextoInicio>

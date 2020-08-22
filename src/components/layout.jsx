@@ -9,7 +9,7 @@ import UseSeo from '../hooks/use-seo.jsx';
 
 const Layout = (props) => {
   const Seo =  UseSeo();
-    const {siteName, fallbackSeo: {description, title}} = Seo;
+    const { fallbackSeo: {description, title}} = Seo;
 
  
   return ( 
