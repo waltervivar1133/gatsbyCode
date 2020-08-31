@@ -30,10 +30,14 @@ const IndexPage = () => {
       <Imagen/>
       <ContenidoInicio />
         <h2 css={css`
-        
+        width:auto;
         text-align: center;
         margin-top:5rem;
-        font-size: 3rem;
+        font-size: 4rem;
+        text-decoration: underline ;
+        color: #E85B57;
+        text-decoration-color: #E85B57;
+        text-decoration-skip: 1px;
           `
         }>Nuestras Habitaciones</h2>
 
@@ -48,7 +52,9 @@ const IndexPage = () => {
             />
           ))}
         </ListadoHabitaciones>
+       
     </Layout>
+    
   )
 }
 

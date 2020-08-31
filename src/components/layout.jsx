@@ -26,7 +26,10 @@ const Layout = (props) => {
          body{
            font-size:18px;
            font-size: 1.8rem;
-           line-height:1.5
+           line-height:1.5;
+           padding: 0;
+           margin: 0;
+           background :#F8F9FC;
          }
          h1 , h2{
            font-family: 'Roboto', serif;
@@ -50,6 +53,7 @@ const Layout = (props) => {
         <meta name="description" content={description}/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
       </Helmet>
       <Header/>
       {props.children}

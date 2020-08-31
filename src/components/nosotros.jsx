@@ -5,23 +5,44 @@ import styled from '@emotion/styled';
 import {css}  from '@emotion/core';
 
 const Contenido = styled.main`
-
-  padding-top: 4rem;
+  background: #DDFFFF;
+  padding:2rem;
+  border-radius:1rem;
+  border-left:4px solid #2196F3;
   max-width: 1200px;
-  width:95%;
+  width:100%;
   margin: 0 auto;
 
   @media (min-width:768px){
     display:grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 3rem;
+ 
+  }
+  @media (max-width:768px){
+    padding:0rem;
+    flex-wrap: wrap;
   }
 
   p {
     line-height:2;
     margin-top:2rem;
   }
-`;
+ 
+;`
+
+const Titulos = styled.main`
+  margin: 0 auto;
+  padding-top: 15rem;
+  line-height:0;
+  text-align: center;
+  font-size:3rem;
+  font-family: 'PT Sans' , sans-serif;
+  font-style: italic;
+  @media (max-width:768px){
+    padding-top: 20rem;
+  }
+`
 
 const ContenidoNosotros = () => {
 
@@ -44,16 +65,17 @@ const ContenidoNosotros = () => {
   return ( 
     <>
 
-      <h2
-        css={css`
-          margin-top: 4rem;
-          text-align: center;
-          font-size: 4rem;
-        
-        `}
-      >{titulo}</h2>
+    <Titulos>
+      <h2>{titulo}</h2>
+    </Titulos>
+     
       <Contenido>
-        <p>{contenido}</p>
+        <p css={css`
+          text-align: center;
+          font-family: roboto;
+          font-size: 16px;
+          font-weight:500;
+        `}>{contenido}</p>
           <Image fluid={imagen.fluid} />
       </Contenido>
     </>

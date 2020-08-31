@@ -34,6 +34,14 @@ module.exports = {
       options: {
         apiToken: '126dc75a19f27567faa2232cd1f202' 
       }
-    }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /\.inline\.svg$/,
+        },
+      },
+    },
   ],
 }

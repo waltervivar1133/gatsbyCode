@@ -5,7 +5,7 @@ import styled from '@emotion/styled';
 
 const Img = styled(BackgroundImage)`
   
-  height:700px;
+  height:900px;
 
 ` ;
 
@@ -42,7 +42,7 @@ const Imagen = () => {
 
   const {image} = useStaticQuery(graphql`
   query{
-    image: file(relativePath: {eq: "8.jpg"})
+    image: file(relativePath: {eq: "9.jpg"})
     {
       sharp:childImageSharp{
         fluid{
@@ -59,9 +59,8 @@ const Imagen = () => {
 
   <Img tag="section"  fluid={image.sharp.fluid}>
     <TextoImagen>
-      <h1>Hotel </h1>
-        <p>El mejor lugar para tus vacaciones</p>
-
+      <h1>Cunas </h1>
+        <p>Los mejores implementos para tu bebé </p>
     </TextoImagen>
     
   </Img>

@@ -9,7 +9,7 @@ const Boton = styled(Link)`
 
   margin-top : 2rem;
   padding: 1rem;
-  background-color: rgba(44, 62,80 , .85);
+  background-color: #E85B57;
   width:100%;
   color : #fff;
   display : block;
@@ -42,11 +42,12 @@ const HabitacionPreview = ({habitacion}) => {
        <h3
         css = {css`
           font-size:3rem;
+          
         `}
        >{titulo}</h3>
        <p>{contenido}</p>
        <Boton to = {slug}>
-          Ver Habitacion
+          Ver Producto
        </Boton>
       </div>
     </div>

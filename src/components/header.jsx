@@ -15,11 +15,12 @@ const Header = () => {
   return ( 
     <header     // esta forma de insertar css es como un props dentro de la etiqueta
       css={css`  
-      background-color:rgba(44,62,80);
+      background-color: #fff;
       padding: 1rem;
-
-       
-
+      position: fixed;
+      z-index: 99999;
+      width: 100%;
+      margin: 0;
       `
       }
    >
@@ -40,7 +41,8 @@ const Header = () => {
           <EnlaceHome
           
           to= "/">
-            <h1>Hotel Gatsby</h1>
+            <h1 css={css`
+            color: #E85B57;`}>Cunas Americo</h1>
           </EnlaceHome>
          
          <Navegacion/>

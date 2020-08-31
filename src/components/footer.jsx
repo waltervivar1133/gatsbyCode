@@ -16,7 +16,7 @@ const Footer = ({title}) => {
   return ( 
     <footer     // esta forma de insertar css es como un props dentro de la etiqueta
       css={css`  
-      background-color:rgba(44,62,80);
+      background-color:#fff;
       padding: 1rem;
       margin-top: 4rem;
        
@@ -29,7 +29,7 @@ const Footer = ({title}) => {
         <div
           css={css`
           
-            max-width:1200px;
+            max-width:100%;
             margin: 0 auto;
               @media (min-width:768px){
               display:flex;
@@ -42,7 +42,7 @@ const Footer = ({title}) => {
           <EnlaceHome
           
           to= "/">
-            <h1>Hotel Gatsby</h1>
+            <h1 css={css`color: #E85B57`}>Cunas Americo</h1>
           </EnlaceHome>
          
        
@@ -51,7 +51,7 @@ const Footer = ({title}) => {
         <p css= {css`
      text-align: center;
      color: #fff;
-     background-color: rgb(33,44,55);
+     background-color: #E85B57;
      margin:0;
      padding: 1rem;
      

@@ -54,7 +54,9 @@ const ContenidoInicio = () => {
               text-align: center;
               font-size: 4rem;
               margin-top: 4rem;
-            
+              text-decoration: underline;
+              color : #E85B57;
+              font-weight:700;
             `}
           
           
