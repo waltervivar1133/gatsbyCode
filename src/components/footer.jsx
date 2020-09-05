@@ -16,7 +16,7 @@ const Footer = ({title}) => {
   return ( 
     <footer     // esta forma de insertar css es como un props dentro de la etiqueta
       css={css`  
-      background: #FF007C;
+      background: #16A3E2;
       padding: 1rem;
       margin-top: 4rem;
       border-top : 3px solid #fff;
@@ -51,7 +51,7 @@ const Footer = ({title}) => {
         <p css= {css`
      text-align: center;
      color: #fff;
-     background-color: #FF007C;
+     background-color: #16A3E2;
      margin:0;
      padding: 1rem;
      

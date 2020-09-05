@@ -55,7 +55,7 @@ const ContenidoInicio = () => {
               font-size: 4rem;
               margin-top: 4rem;
               text-decoration: underline;
-              color : #FF007C;
+              color : #F19FC5;
               font-weight:700;
             `}
           
@@ -64,7 +64,7 @@ const ContenidoInicio = () => {
           <TextoInicio>
             <p>{contenido}</p>
             <Image css={css`
-              border: 5px groove   #bb7f8b;
+              border: 5px solid   #16A3E2;
             `} fluid={imagen.fluid} alt="pantalla principal"/>  
             {/* las imagenes siempre van sin comillas */}
           </TextoInicio>

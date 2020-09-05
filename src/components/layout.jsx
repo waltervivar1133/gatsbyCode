@@ -16,6 +16,8 @@ const Layout = (props) => {
     <>
       <Global
         styles={css `
+
+        
          html{
            font-size: 62.5%;
            box-sizing: border-box;
@@ -33,11 +35,13 @@ const Layout = (props) => {
 
          }
          h1 , h2{
-           font-family: 'Roboto', serif;
+          font-family: 'Fredoka One', cursive;
+
          }
 
          h3{
-           font-family: 'PT Sans' , sans-serif;
+          font-family: 'Varela Round', sans-serif;
+
          }
          ul{
            list-style: none;
@@ -54,6 +58,7 @@ const Layout = (props) => {
         <meta name="description" content={description}/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Varela+Round&display=swap" rel="stylesheet"/>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
       </Helmet>
       <Header/>

@@ -22,14 +22,24 @@ const TextoImagen = styled.div`
   h1{
     font-size: 4rem;
     margin: 0%;
-
+    color: #16A3E2;
+    padding: 5px;
+    background: #fff;
+    border-radius:4px;
+    font-weight: bold;
     @media (min-width:992px){
       font-size: 5.8rem;
     }
   }
-  p {
+  h2 {
     color : #fff;
-    font-size:2rem;
+    font-size:3rem;
+    text-align:center;
+    padding: 5px;
+    background: #fff;
+    border-radius:4px;
+    color: #16A3E2;
+    font-weight: bold;
     @media (min-width:992px){
       font-size: 3.5rem;
     }
@@ -60,7 +70,7 @@ const Imagen = () => {
   <Img tag="section"  fluid={image.sharp.fluid}>
     <TextoImagen>
       <h1>Cunas </h1>
-        <p>Los mejores implementos para tu bebé </p>
+        <h2>Los mejores implementos para tu bebé </h2>
     </TextoImagen>
     
   </Img>

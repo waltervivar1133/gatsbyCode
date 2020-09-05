@@ -15,13 +15,13 @@ const Header = () => {
   return ( 
     <header     // esta forma de insertar css es como un props dentro de la etiqueta
       css={css`  
-      background: #FF007C;
+      background: #F19FC5;
       padding: 1rem;
       position: fixed;
       z-index: 99999;
       width: 100%;
       margin: 0;
-      border-bottom: 3px solid white;
+      border-bottom: 3px solid #fff;
       `
       }
    >
