@@ -9,7 +9,7 @@ const Boton = styled(Link)`
 
   margin-top : 2rem;
   padding: 1rem;
-  background-color: #E85B57;
+  background-color: #FF007C;
   width:100%;
   color : #fff;
   display : block;

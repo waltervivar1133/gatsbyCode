@@ -14,7 +14,7 @@ const Nav = styled.nav`
 `;
 
 const NavLink = styled(Link)`
-  color: #000;
+  color: #fff;
   font-size: 1.6rem;
   font-weight:700;
   line-height: 1rem;
@@ -28,13 +28,13 @@ const NavLink = styled(Link)`
   }
 
   &.pagina-actual{
-    border-bottom: 2px solid #E85B57;
+    border-bottom: 2px solid #fff;
     transition-duration:0.1s;
     transition-delay:0.1s;
     
   }
   &:hover{
-    border-bottom: 2px solid #E85B57;
+    border-bottom: 2px solid #fff;
     transition:all 0.1s ease;
   }
 

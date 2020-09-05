@@ -29,7 +29,8 @@ const Layout = (props) => {
            line-height:1.5;
            padding: 0;
            margin: 0;
-           background :#F8F9FC;
+           background: #fffff6;
+
          }
          h1 , h2{
            font-family: 'Roboto', serif;

@@ -16,10 +16,10 @@ const Footer = ({title}) => {
   return ( 
     <footer     // esta forma de insertar css es como un props dentro de la etiqueta
       css={css`  
-      background-color:#fff;
+      background: #FF007C;
       padding: 1rem;
       margin-top: 4rem;
-       
+      border-top : 3px solid #fff;
 
       `
       }
@@ -42,7 +42,7 @@ const Footer = ({title}) => {
           <EnlaceHome
           
           to= "/">
-            <h1 css={css`color: #E85B57`}>Cunas Americo</h1>
+            <h1 css={css`color: #fff`}>Cunas Americo</h1>
           </EnlaceHome>
          
        
@@ -51,7 +51,7 @@ const Footer = ({title}) => {
         <p css= {css`
      text-align: center;
      color: #fff;
-     background-color: #E85B57;
+     background-color: #FF007C;
      margin:0;
      padding: 1rem;
      

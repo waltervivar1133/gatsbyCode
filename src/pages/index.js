@@ -35,8 +35,8 @@ const IndexPage = () => {
         margin-top:5rem;
         font-size: 4rem;
         text-decoration: underline ;
-        color: #E85B57;
-        text-decoration-color: #E85B57;
+        color: #FF007C;
+        text-decoration-color: #FF007C;
         text-decoration-skip: 1px;
           `
         }>Nuestras Habitaciones</h2>
