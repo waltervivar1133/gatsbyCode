@@ -10,6 +10,7 @@ query($slug : String) {
     nodes{
       titulo
       contenido
+      categoria
       imagen{
         fluid(maxWidth:1200){
           ...GatsbyDatoCmsFluid
@@ -24,7 +25,7 @@ query($slug : String) {
 
 const HabitacionesTemplate = ({data : {allDatoCmsHabitacion:{ nodes }}}) => {
 
-const {titulo, contenido, imagen} = nodes[0];
+const {titulo, contenido, imagen, categoria} = nodes[0];
   return ( 
 
     <Layout>
@@ -41,10 +42,22 @@ const {titulo, contenido, imagen} = nodes[0];
             text-align:center;
             padding-top:15rem;
             margin:0;
+            color: green;
             @media (max-width:768px){
               padding-top:25rem;
             }
           `}>{titulo}</h1>
+          <span css={css`
+            background: #16A3E2;
+            padding: 0.5em;
+            border-radius:5px;
+            color : white;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+
+          
+          `}> Categoria : {categoria}</span>
           <p css={css`
             background: #DDFFFF;
             padding: 2rem;

@@ -22,6 +22,10 @@ const Header = () => {
       width: 100%;
       margin: 0;
       border-bottom: 3px solid #fff;
+
+      @media screen and (max-width: 650px){
+        padding: 0;
+      }
       `
       }
    >
@@ -43,7 +47,12 @@ const Header = () => {
           
           to= "/">
             <h1 css={css`
-            color: #fff;`}>Cunas Americo</h1>
+            color: #fff;
+            @media screen and (max-width:650px){
+              padding: 1px;
+              margin: 0;
+            }
+            `}>Cunas Americo</h1>
           </EnlaceHome>
          
          <Navegacion/>

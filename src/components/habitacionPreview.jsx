@@ -21,7 +21,7 @@ const Boton = styled(Link)`
 
 const HabitacionPreview = ({habitacion}) => {
   
-    const {contenido, imagen , titulo , slug } = habitacion;
+    const {contenido, imagen , titulo , slug , categoria} = habitacion;
 
   return ( 
 
@@ -42,10 +42,23 @@ const HabitacionPreview = ({habitacion}) => {
        <h3
         css = {css`
           font-size:3rem;
+          color:#16A3E2;
           
         `}
        >{titulo}</h3>
+       <span css={css`
+        background: #16A3E2;
+        padding: 0.5em;
+        border-radius:5px;
+        color : white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: arial, sans-serif;
+
+       
+       `}> Categoria : {categoria}</span>
        <p>{contenido}</p>
+       
        <Boton to = {slug}>
           Ver Producto
        </Boton>

@@ -11,6 +11,7 @@ const useHabitaciones = () => {
           id
           slug
           contenido
+          categoria
           imagen{
             fluid(maxWidth:1200){
               ...GatsbyDatoCmsFluid
@@ -28,7 +29,8 @@ const useHabitaciones = () => {
     id: habitacion.id,
     slug: habitacion.slug,
     contenido : habitacion.contenido,
-    imagen : habitacion.imagen
+    imagen : habitacion.imagen,
+    categoria : habitacion.categoria,
 
   }))
 }
