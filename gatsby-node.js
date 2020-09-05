@@ -16,6 +16,7 @@ exports.createPages = async({ actions, graphql, reporter}) =>{
       reporter.panic ('no hubo resultados ', resultado.errors);
     }
 
+
     // si hay paginas , crear los arvhivos
 
     const habitaciones = resultado.data.allDatoCmsHabitacion.nodes;

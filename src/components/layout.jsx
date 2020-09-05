@@ -16,7 +16,12 @@ const Layout = (props) => {
     <>
       <Global
         styles={css `
-
+          $lime: #c5dc50;
+          $rasp: #f36a6f;
+          $seed: #383838;
+          $sm: 1rem;
+          $md: 2.5rem;
+          $lg: 4rem;
         
          html{
            font-size: 62.5%;

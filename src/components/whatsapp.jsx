@@ -22,7 +22,7 @@ const whatsapp = () => {
       z-index:100;
       `}
 
-    href={enlace} target = {"_blank"} >
+    href={enlace} target = {"_blank"} rel="noreferrer">
     <img src={ Whatsapp } 
  alt=""/>  
     </a>
