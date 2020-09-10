@@ -12,6 +12,7 @@ const useHabitaciones = () => {
           slug
           contenido
           categoria
+          precio
           imagen{
             fluid(maxWidth:1200){
               ...GatsbyDatoCmsFluid
@@ -31,6 +32,7 @@ const useHabitaciones = () => {
     contenido : habitacion.contenido,
     imagen : habitacion.imagen,
     categoria : habitacion.categoria,
+    precio : habitacion.precio,
 
   }))
 }

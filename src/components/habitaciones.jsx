@@ -11,6 +11,7 @@ query($slug : String) {
       titulo
       contenido
       categoria
+      precio
       imagen{
         fluid(maxWidth:1200){
           ...GatsbyDatoCmsFluid
@@ -25,7 +26,7 @@ query($slug : String) {
 
 const HabitacionesTemplate = ({data : {allDatoCmsHabitacion:{ nodes }}}) => {
 
-const {titulo, contenido, imagen, categoria} = nodes[0];
+const {titulo, contenido, imagen, categoria, precio} = nodes[0];
   return ( 
 
     <Layout>

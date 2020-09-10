@@ -21,7 +21,7 @@ const Boton = styled(Link)`
 
 const HabitacionPreview = ({habitacion}) => {
   
-    const {contenido, imagen , titulo , slug , categoria} = habitacion;
+    const {contenido, imagen , titulo , slug , categoria, precio} = habitacion;
 
   return ( 
 
@@ -30,6 +30,7 @@ const HabitacionPreview = ({habitacion}) => {
       css={css`
         border : 1px solid #e1e1e1;
         margin-bottom: 2rem;
+      
       `}>
      <Image
       fluid={imagen.fluid}
@@ -58,10 +59,25 @@ const HabitacionPreview = ({habitacion}) => {
        
        `}> Categoria : {categoria}</span>
        <p>{contenido}</p>
+       <span css={css`
+        background: green;
+        padding: 0.5em;
+        min-width: 100%;
+        border-radius:5px;
+        color : white;
+        font-weight: bold;
+        font-size: 14px;
+        font-family: arial, sans-serif;
+
        
-       <Boton to = {slug}>
-          Ver Producto
-       </Boton>
+       `}> Precio : s/ {precio} soles</span>
+    
+        <Boton 
+           to = {slug}>
+            Ver Producto
+        </Boton>
+  
+       
       </div>
     </div>
   );

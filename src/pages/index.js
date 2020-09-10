@@ -39,7 +39,7 @@ const IndexPage = () => {
         text-decoration-color: #F19FC5;
         text-decoration-skip: 1px;
           `
-        }>Nuestras Habitaciones</h2>
+        }>¡Nuestros Productos!</h2>
 
         <ListadoHabitaciones >
           {habitaciones.map(habitacion=>(
