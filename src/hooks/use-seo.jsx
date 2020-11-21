@@ -7,18 +7,23 @@ const UseSeo = () => {
   query{
   
       datoCmsSite{
-        globalSeo{
-          siteName
-          titleSuffix
-          fallbackSeo{
-            title
-              description
-          }
-        }
+          globalSeo{
+            siteName
+            titleSuffix
+            fallbackSeo{
+              title
+                description
+            }
+         }
+        faviconMetaTags {
+          tags
+    			}
       }
   }
   
   `)
+  
+  console.log(data)
 
   return data.datoCmsSite.globalSeo;
   

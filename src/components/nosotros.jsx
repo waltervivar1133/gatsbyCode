@@ -11,7 +11,7 @@ const Contenido = styled.main`
   border-left:4px solid #2196F3;
   max-width: 1200px;
   width:100%;
-  margin: 0 auto;
+  margin: 1rem auto;
 
   @media (min-width:768px){
     display:grid;
@@ -76,7 +76,17 @@ const ContenidoNosotros = () => {
           font-size: 16px;
           font-weight:500;
         `}>{contenido}</p>
+
+      
           <Image fluid={imagen.fluid} />
+      </Contenido>
+      <Contenido>
+      <h1>Dirección</h1>
+        <span css={css`
+          display: flex;
+          text-align:center;
+          font-weight: bold;
+        `}>Altura 12 av.alameda sur calle 3 Mz i lt 33 Villa Magisterial los cedros | chorrillos</span>
       </Contenido>
     </>
    );

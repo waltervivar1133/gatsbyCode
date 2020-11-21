@@ -21,12 +21,13 @@ query($slug : String) {
   }
 }
 
-
 `
 
 const HabitacionesTemplate = ({data : {allDatoCmsHabitacion:{ nodes }}}) => {
 
 const {titulo, contenido, imagen, categoria, precio} = nodes[0];
+
+console.log(HabitacionesTemplate)
   return ( 
 
     <Layout>
@@ -43,7 +44,7 @@ const {titulo, contenido, imagen, categoria, precio} = nodes[0];
             text-align:center;
             padding-top:15rem;
             margin:0;
-            color: green;
+            color: #2a2a86;
             @media (max-width:768px){
               padding-top:25rem;
             }
@@ -59,6 +60,17 @@ const {titulo, contenido, imagen, categoria, precio} = nodes[0];
 
           
           `}> Categoria : {categoria}</span>
+             <span css={css`
+            background: #16A3E2;
+            padding: 0.5em;
+            border-radius:5px;
+            color : white;
+            font-weight: bold;
+            font-size: 14px;
+            font-family: arial, sans-serif;
+            margin-left: 1rem;
+          
+          `}> Precio : S/{precio}</span>
           <p css={css`
             background: #DDFFFF;
             padding: 2rem;
@@ -72,6 +84,7 @@ const {titulo, contenido, imagen, categoria, precio} = nodes[0];
             }
           
           `}>{contenido}</p>
+            
           <Image
             fluid={imagen.fluid}
           >

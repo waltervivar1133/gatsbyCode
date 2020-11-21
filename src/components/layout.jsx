@@ -9,8 +9,9 @@ import UseSeo from '../hooks/use-seo.jsx';
 
 const Layout = (props) => {
   const Seo =  UseSeo();
-    const { fallbackSeo: {description, title}} = Seo;
+    const {siteName, fallbackSeo: {description, title}} = Seo;
 
+ 
  
   return ( 
     <>
@@ -60,6 +61,7 @@ const Layout = (props) => {
       />
       <Helmet>  
         <title>{title}</title>
+         <link rel="icon" href="https://www.datocms-assets.com/31562/1599880171-smile.png?w=180&h=180" type="png"/>
         <meta name="description" content={description}/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"/>

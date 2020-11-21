@@ -12,6 +12,7 @@ const ListadoHabitaciones = styled.ul`
   max-width:1200px;
   width:95%;
   margin: 4rem auto 0 auto; 
+  /* display:flex; */
 
   @media (min-width: 768px){
     display: grid;

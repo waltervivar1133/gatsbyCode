@@ -30,7 +30,9 @@ const HabitacionPreview = ({habitacion}) => {
       css={css`
         border : 1px solid #e1e1e1;
         margin-bottom: 2rem;
-      
+        /* display: flex;
+        flex-direction: column;
+        margin-top:  auto; */
       `}>
      <Image
       fluid={imagen.fluid}

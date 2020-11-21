@@ -42,7 +42,7 @@ const Footer = ({title}) => {
           <EnlaceHome
           
           to= "/">
-            <h1 css={css`color: #fff`}>Cunas Americo</h1>
+            <h1 css={css`color: #fff`}>MecoKids</h1>
           </EnlaceHome>
          
        

@@ -52,7 +52,7 @@ const Header = () => {
               padding: 1px;
               margin: 0;
             }
-            `}>Cunas Americo</h1>
+            `}>MecoKids</h1>
           </EnlaceHome>
          
          <Navegacion/>
